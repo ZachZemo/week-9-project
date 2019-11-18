@@ -53,4 +53,4 @@ flower_type = 0
 iris.data[np.where(iris.target == flower_type), flower_feature_location]
 
 
-I've decided to use the libraries available to do the rest of the project.
+I've decided to use the libraries available to do the rest of the project such as KNeighbors.
