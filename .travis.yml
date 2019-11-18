@@ -14,4 +14,4 @@ install:
   - pip install sklearn
 
 script:
-  - python3 Heatmap.py
+  - python3 Clustering.py
