@@ -8,6 +8,8 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
+os.makedirs('plots/iris_cluster', exist_ok=True)
+
 
 iris = load_iris()
 #iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
@@ -36,3 +38,7 @@ plt.plot(error_rate, color='red', label='error rate', linestyle='--')
 plt.xlabel('n neighbors parameter')
 plt.ylabel('f1_score/error_rate')
 plt.legend()
+plt.savefig('plots/iris_cluster/f1_scores-errors.png')
+plt.close()
+
+
